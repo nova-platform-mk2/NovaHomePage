@@ -13,7 +13,7 @@ const Wrap = styled.div`
   font-style: normal;
 `
 
-const Icons_Wrap = styled.div`
+const IconsWrap = styled.div`
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +21,7 @@ const Icons_Wrap = styled.div`
   width: 500px;
   height: 500px;
 `
-const Icon_Wrap = styled.div`
+const IconWrap = styled.div`
     text-align: center;
     align-items: center;
     width: 250px;
@@ -77,33 +77,34 @@ const TextWrap = styled.div`
   left: 100px;
 `
 
+const textcontent = "Lorem ipsum dolor sit amet\nconsectetur test test test.\nAdipiscing mauris convallis inac in\nnullam test test test.\nUllamcorper aliquet nec adipiscing ac\nlorem this is design not code"
 
 export default function Main() {
   return (
     <Wrap>
       <TextWrap>
         <HeadLine>What we do</HeadLine>
-        <TextContent>Lorem ipsum dolor sit amet<br/>consectetur test test test.<br/>Adipiscing mauris convallis inac in<br/>nullam test test test.<br/>Ullamcorper aliquet nec adipiscing ac<br/>lorem this is design not code</TextContent>
+        <TextContent>{textcontent}</TextContent>
       </TextWrap>
       <DivideLine/>
-      <Icons_Wrap>
-        <Icon_Wrap>
+      <IconsWrap>
+        <IconWrap>
           <Icon src = {DummyIcon} ></Icon>
           <span>Algorithm</span>
-        </Icon_Wrap>
-        <Icon_Wrap>
+        </IconWrap>
+        <IconWrap>
           <Icon src = {DummyIcon} ></Icon>
           <span>Application</span>
-        </Icon_Wrap>
-        <Icon_Wrap>
+        </IconWrap>
+        <IconWrap>
           <Icon src = {DummyIcon} ></Icon>
           <span>DebOps</span>
-        </Icon_Wrap>
-        <Icon_Wrap>
+        </IconWrap>
+        <IconWrap>
           <Icon src = {DummyIcon} ></Icon>
           <span>Cloud</span>
-        </Icon_Wrap>
-      </Icons_Wrap>
+        </IconWrap>
+      </IconsWrap>
     </Wrap>
   )
 }
